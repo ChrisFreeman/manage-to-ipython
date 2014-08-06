@@ -18,6 +18,8 @@ Access to the missing packages can be fixed by adding two directories to the sys
     if "/usr/lib/pymodules/python2.7" not in sys.path:
         sys.path.append("/usr/lib/pymodules/python2.7")
 
+The modified ipython script has been added to the repo.
+
 ## Fix IPython access to the Django project.settings.py configuration file
 
 The manage.py script created by django-admin.py provides a perfect template to set the environment for IPython as it contains the project specific path to the settings.py file.  It is a hassle to create a custom IPython configuration file for each Django project.
